@@ -1,0 +1,13 @@
+(executable
+ (name ex_main)
+ (libraries week1))
+
+(install
+ (section bin)
+ (files
+  (ex_main.exe as ex_main)))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))

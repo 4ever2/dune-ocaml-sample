@@ -1,0 +1,8 @@
+(tests
+ (names ex1_test ex2_test ex3_test ex4_test)
+ (libraries week1 ounit2))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))

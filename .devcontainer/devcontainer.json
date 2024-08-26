@@ -1,0 +1,20 @@
+{
+    "name": "dOvs container",
+    "image": "ghcr.io/au-compilers/dovs_container:main",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ocamllabs.ocaml-platform"
+            ]
+        },
+        "settings": {
+            "terminal.integrated.profiles.linux": {
+                "bash": {
+                    "path": "bash",
+                    "icon": "terminal-bash"
+                }
+            },
+            "terminal.integrated.defaultProfile.linux": "bash"
+        }
+    }
+}
