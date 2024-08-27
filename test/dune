@@ -1,6 +1,14 @@
+; tests stanza defines tests for the project
+; each test file is listed in the names field
+; libraries that the tests depend on are listed in the libraries field
 (tests
  (names ex1_test ex2_test ex3_test ex4_test)
  (libraries week1 ounit2))
+
+; We can also define just a single test using the test stanza
+; (test
+;  (name ex1_test)
+;  (libraries week1 ounit2))
 
 (env
  (dev

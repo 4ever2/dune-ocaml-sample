@@ -1,7 +1,16 @@
+; The executable stanza defines an OCaml executable
+; The name field is the name of the OCaml main file for the executable
+; The compiled executable will have the same name but with a .exe file extension
+; The libraries field defines the dependencies of the executable
 (executable
  (name ex_main)
  (libraries week1))
 
+; The install stanza tells dune how to install your executable.
+; It can be installed with the command `dune install
+; The section field specifies where the binary should be install on the user system
+; The files field specified the files that should be installed and under which names
+; If the project contains more than one package a `package` field will also be required
 (install
  (section bin)
  (files

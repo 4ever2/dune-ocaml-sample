@@ -1,3 +1,8 @@
+; The library stanza defines an OCaml library
+; The name field is the name of the library, here the name is lowercase.
+; However, when importing the library in another OCaml file the first character will be uppercase (e.g. Week1)
+; The modules field lists the OCaml files that are exposed to consumers of the library.
+; By default if the field is unscpecified dune will include all .ml files in the directory.
 (library
  (name week1)
  (modules ex_1 ex_2 ex_3 ex_4))
