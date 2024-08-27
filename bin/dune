@@ -16,7 +16,15 @@
  (files
   (ex_main.exe as ex_main)))
 
+; We can turn errors about unused code into warnings with the following stanza
 (env
  (dev
   (flags
-   (:standard -warn-error -A))))
+   (:standard -warn-error -K))))
+
+; We can also turn all errors into warnings, though this is not recommended
+; However, it can be useful to temporarily enable at times
+;(env
+; (dev
+;  (flags
+;   (:standard -warn-error -A))))
