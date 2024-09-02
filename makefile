@@ -3,7 +3,7 @@ all: build
 
 build:
 	dune build
-.PHONY: utils
+.PHONY: build
 
 clean:
 	dune clean
